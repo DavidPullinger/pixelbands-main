@@ -1,23 +1,24 @@
+// external components
 import type { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
-import * as background from "../public/images/background.jpg";
+// assets
+import * as background from "../public/images/background.png";
 
 const Home: NextPage = () => {
   return (
     <div>
-      <Head>
-        <title>PixelBands</title>
-      </Head>
       <Image
+        id="home"
+        loading="eager"
+        priority={true}
         src={background}
-        alt=""
+        alt="background"
         layout="fill"
         objectFit="cover"
-        objectPosition="center"
-        quality={100}
+        objectPosition="center bottom"
         unoptimized={true}
-        placeholder="blur"
+        quality={100}
+        style={{ transform: "translateZ(0)" }} // keeps background crisp on chrome/brave
       />
     </div>
   );
