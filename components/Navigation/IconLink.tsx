@@ -1,4 +1,5 @@
-import { SVGIconParams } from "./SVGs";
+// custom types
+import { SVGIconParams } from "../SVGs";
 
 export default function IconLink(props: {
   src: (props: SVGIconParams) => JSX.Element;

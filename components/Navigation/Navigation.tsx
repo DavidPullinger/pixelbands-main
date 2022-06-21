@@ -4,8 +4,8 @@ import { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 // custom components
 import Link from "./NavigationLink";
-import { Logo, Twitter, Discord, MagicEden } from "./SVGs";
 import IconLink from "./IconLink";
+import { Logo, Twitter, Discord, MagicEden } from "@/components/SVGs";
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +19,7 @@ export default function Navigation() {
   }
 
   return (
-    <div className="relative flex items-center justify-between z-10">
+    <div className="relative flex items-center justify-between z-10 pb-8">
       <Logo width={32} height={32} className="cursor-pointer z-10" />
       {menuOpen ? (
         <XIcon

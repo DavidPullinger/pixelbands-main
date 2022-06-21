@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 // external components
 import Link from "next/link";
 
-export default function NavLink(props: {
+export default function NavigationLink(props: {
   num: string;
   name: string;
   url: string;
