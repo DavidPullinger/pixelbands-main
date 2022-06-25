@@ -4,6 +4,8 @@ import { SVGIconParams } from "../SVGs";
 export default function IconLink(props: {
   src: (props: SVGIconParams) => JSX.Element;
   url: string;
+  width: number;
+  height: number;
 }) {
   return (
     <a
@@ -12,7 +14,7 @@ export default function IconLink(props: {
       rel="noreferrer"
       className="hover:text-accent"
     >
-      <props.src width={24} height={24} />
+      <props.src width={props.width} height={props.height} />
     </a>
   );
 }

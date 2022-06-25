@@ -4,7 +4,7 @@ import { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 // custom components
 import Link from "./NavigationLink";
-import IconLink from "./IconLink";
+import { IconLink } from "@/components/Shared";
 import { Logo, Twitter, Discord, MagicEden } from "@/components/SVGs";
 
 export default function Navigation() {
@@ -78,11 +78,23 @@ export default function Navigation() {
           url="https://pixelbands.holaplex.market/"
         />
         <div className="flex gap-4 mt-auto items-center md:ml-6">
-          <IconLink url="https://twitter.com/PixelBandsNFT" src={Twitter} />
-          <IconLink url="https://discord.gg/pixelbands" src={Discord} />
+          <IconLink
+            url="https://twitter.com/PixelBandsNFT"
+            src={Twitter}
+            width={24}
+            height={24}
+          />
+          <IconLink
+            url="https://discord.gg/pixelbands"
+            src={Discord}
+            width={24}
+            height={24}
+          />
           <IconLink
             url="https://magiceden.io/creators/pixelbands"
             src={MagicEden}
+            width={24}
+            height={24}
           />
         </div>
       </ul>

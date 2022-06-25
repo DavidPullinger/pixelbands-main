@@ -14,9 +14,12 @@ export default function AnimatedGuitar(props: AnimatedSVGIconParams) {
       const percentage = (center - top) / height;
       const drawLength = percentage > 0 ? percentage : 0;
       path.style.strokeDashoffset = drawLength < 1 ? 1 - drawLength : 0;
+      if (scrollY == 0) {
+        path.style.strokeDashoffset = 1;
+      }
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
   });
 
   return (
@@ -24,8 +27,7 @@ export default function AnimatedGuitar(props: AnimatedSVGIconParams) {
       CSS animation signified by class animate-line*/
     <svg
       className={props.className}
-      width="auto"
-      height={props.height}
+      width="100%"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 388 717"
