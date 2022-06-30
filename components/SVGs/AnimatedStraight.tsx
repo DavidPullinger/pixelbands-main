@@ -13,6 +13,9 @@ export default function AnimatedStraight(props: AnimatedSVGIconParams) {
       const percentage = (center - top) / height;
       const drawLength = percentage > 0 ? percentage : 0;
       path.style.strokeDashoffset = drawLength < 1 ? 1 - drawLength : 0;
+      if (scrollY == 0) {
+        path.style.strokeDashoffset = 1;
+      }
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });

@@ -18,7 +18,7 @@ export type SVGIconParams = {
  * Aim for all animated SVGs using a foreground mask to have these params
  */
 export type AnimatedSVGIconParams = {
-  height: number;
+  height?: number;
   strokeWidth: number;
   animationSpeed?: number;
   className?: string;

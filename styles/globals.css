@@ -25,11 +25,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-.list-team {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  column-gap: 2rem;
-  row-gap: 4rem;
-}

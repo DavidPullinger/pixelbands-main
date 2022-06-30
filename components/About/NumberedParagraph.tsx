@@ -3,9 +3,11 @@ export default function NumberedParagraph(props: {
   number: number;
 }) {
   return (
-    <div className="flex items-center gap-4">
-      <p className="font-bold text-2xl">{props.number}</p>
-      <p>{props.text}</p>
+    <div className="flex items-center justify-start gap-4 md:flex-col">
+      <p className="font-bold text-2xl sm:text-3xl opacity-40">
+        0{props.number}
+      </p>
+      <p className="text-sm sm:text-lg">{props.text}</p>
     </div>
   );
 }

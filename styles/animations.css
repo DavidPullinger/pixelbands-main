@@ -6,6 +6,22 @@
   transition: all ease-out 100ms;
 }
 
+.slide {
+  animation: slide 6s linear infinite;
+}
+.slide-second {
+  animation-delay: 3s;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 /* ======================== MENU SLIDE ======================= */
 @media (max-width: 825px) {
   #menu {

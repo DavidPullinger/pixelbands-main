@@ -19,7 +19,7 @@ export default function Navigation() {
   }
 
   return (
-    <div className="relative flex items-center justify-between z-10 pb-8">
+    <div className="relative flex items-center justify-between z-10 pb-8 lg:pb-12">
       <Logo width={32} height={32} className="cursor-pointer z-10" />
       {menuOpen ? (
         <XIcon
