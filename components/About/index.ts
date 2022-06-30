@@ -8,4 +8,5 @@ export type TeamCardParams = {
   role: string;
   bio: string;
   pfp: StaticImageData;
+  twitter: string;
 };

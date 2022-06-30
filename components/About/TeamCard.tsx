@@ -21,7 +21,7 @@ export default function TeamCard(props: TeamCardParams) {
           <p className="text-[18px] uppercase font-bold">{props.role}</p>
           <IconLink
             src={Twitter}
-            url="https://www.twitter.com"
+            url={"https://twitter.com/" + props.twitter}
             width={18}
             height={18}
           />

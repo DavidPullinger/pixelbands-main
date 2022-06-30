@@ -14,59 +14,6 @@ import {
   kotin,
 } from "public/images";
 
-const paragraph_1 =
-  "What if we could use the blockchain to create a new way of distributing music?";
-const paragraph_2 =
-  "What if we could create a system where artists could be paid directly by their fans?";
-const paragraph_3 =
-  "What if we could create a new music ecosystem that was transparent, fair, and decentralized?";
-
-const team = [
-  {
-    name: "David",
-    role: "Full Stack Developer",
-    bio: "Passionate about all things web",
-    pfp: david,
-  },
-  {
-    name: "Owen",
-    role: "Dev",
-    bio: "Passionate about building tomorrow's reality",
-    pfp: owen,
-  },
-  {
-    name: "Cronus",
-    role: "Temp",
-    bio: "Short bio",
-    pfp: cronus,
-  },
-
-  {
-    name: "J5",
-    role: "Chief Engineer & Music Developer",
-    bio: "Multi-platinum mix and mastering engineer. Former staff at Criteria Studios, founding member of BanditDAO, and former MonkeDAO Board Member",
-    pfp: j5,
-  },
-  {
-    name: "Music Monke",
-    role: "Music & Project Strategy",
-    bio: "Web2 refugee, bedroom musician",
-    pfp: kotin,
-  },
-  {
-    name: "JRussell",
-    role: "Artist Relations & Community",
-    bio: "Musician, percussionist, instructor. Crypto and NFTs since 2021.",
-    pfp: jrussell,
-  },
-  {
-    name: "Boi King Koi",
-    role: "Marketing",
-    bio: "Music Producer, DJ, Podcaster, recording studio owner & operator. Basically, my life is music.",
-    pfp: kingkoi,
-  },
-];
-
 const About: NextPage = () => {
   return (
     <div className="flex flex-col gap-8 md:gap-12">
@@ -129,6 +76,7 @@ const About: NextPage = () => {
                 role={member.role}
                 pfp={member.pfp}
                 bio={member.bio}
+                twitter={member.twitter}
               />
             );
           })}
@@ -137,5 +85,65 @@ const About: NextPage = () => {
     </div>
   );
 };
+
+const paragraph_1 =
+  "What if we could use the blockchain to create a new way of distributing music?";
+const paragraph_2 =
+  "What if we could create a system where artists could be paid directly by their fans?";
+const paragraph_3 =
+  "What if we could create a new music ecosystem that was transparent, fair, and decentralized?";
+
+const team = [
+  {
+    name: "Music Monke",
+    role: "Music & Project Strategist",
+    bio: "Web2 refugee, bedroom musician.",
+    pfp: kotin,
+    twitter: "MusicMonke",
+  },
+  {
+    name: "Cronus",
+    role: "Visual Artist",
+    bio: "Crypto investor. NFT collector.",
+    pfp: cronus,
+    twitter: "CronusTitanNFT",
+  },
+  {
+    name: "J5",
+    role: "Chief Engineer & Music Developer",
+    bio: "Multi-platinum mix and mastering engineer. Former staff at Criteria Studios, founding member of BanditDAO, and former MonkeDAO Board Member.",
+    pfp: j5,
+    twitter: "j5trades",
+  },
+  {
+    name: "JRussell",
+    role: "Artist Relations & Community Manager",
+    bio: "Musician, percussionist, instructor. Crypto and NFTs since 2021.",
+    pfp: jrussell,
+    twitter: "joseph_russsell ",
+  },
+
+  {
+    name: "Boi King Koi",
+    role: "Marketing Manager",
+    bio: "Music Producer, DJ, Podcaster, recording studio owner & operator. Basically, my life is music.",
+    pfp: kingkoi,
+    twitter: "boikingkoi",
+  },
+  {
+    name: "Owen",
+    role: "Developer",
+    bio: "Crypto, NFT & Tech enthusiast. 4+ years in the Crypto space. Passionate about building tomorrow's reality.",
+    pfp: owen,
+    twitter: "NFTOwen",
+  },
+  {
+    name: "David",
+    role: "Full Stack Developer",
+    bio: "All things crypto since 2021, StackOverflow expert since long before. Happy to be building a decentralized, open source web. ",
+    pfp: david,
+    twitter: "devid_sol",
+  },
+];
 
 export default About;
