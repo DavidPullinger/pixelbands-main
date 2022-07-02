@@ -69,7 +69,7 @@ export default function Navigation() {
           onClick={() => handleMenuToggle(false)}
           num="03"
           name="LAUNCHPAD"
-          url="https://sxsw.pixelbands.io"
+          url="/launchpad"
         />
         <Link
           onClick={() => handleMenuToggle(false)}
