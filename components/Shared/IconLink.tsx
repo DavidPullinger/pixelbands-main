@@ -4,8 +4,8 @@ import { SVGIconParams } from "../SVGs";
 export default function IconLink(props: {
   src: (props: SVGIconParams) => JSX.Element;
   url: string;
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }) {
   return (
     <a
