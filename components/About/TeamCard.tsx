@@ -26,7 +26,7 @@ export default function TeamCard(props: TeamCardParams) {
             height={18}
           />
         </div>
-        <p className="text-sm pt-2 sm:text-lg">{props.bio}</p>
+        <p className="pt-2">{props.bio}</p>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ export default function AnimatedStraight(props: AnimatedSVGIconParams) {
       CSS animation signified by class animate-line*/
     <svg
       className={props.className}
-      width="100%"
+      width={props.width}
       height={props.height}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

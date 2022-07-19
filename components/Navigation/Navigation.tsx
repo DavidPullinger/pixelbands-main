@@ -3,7 +3,7 @@ import { useState } from "react";
 // external components
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 // custom components
-import Link from "./NavigationLink";
+import NavigationLink from "./NavigationLink";
 import { IconLink } from "@/components/Shared";
 import { Logo, Twitter, Discord, MagicEden } from "@/components/SVGs";
 
@@ -47,31 +47,31 @@ export default function Navigation() {
           " gap-8"
         }
       >
-        <Link
+        <NavigationLink
           onClick={() => handleMenuToggle(false)}
           num="00"
           name="HOME"
           url="/"
         />
-        <Link
+        <NavigationLink
           onClick={() => handleMenuToggle(false)}
           num="01"
           name="ABOUT"
           url="/about"
         />
-        <Link
+        <NavigationLink
           onClick={() => handleMenuToggle(false)}
           num="02"
           name="STUDIO"
           url="https://studio.pixelbands.io"
         />
-        <Link
+        <NavigationLink
           onClick={() => handleMenuToggle(false)}
           num="03"
           name="LAUNCHPAD"
           url="/launchpad"
         />
-        <Link
+        <NavigationLink
           onClick={() => handleMenuToggle(false)}
           num="04"
           name="MARKETPLACE"
