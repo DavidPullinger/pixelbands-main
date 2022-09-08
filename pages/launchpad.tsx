@@ -179,7 +179,12 @@ const Launchpad: NextPage = () => {
         <section className="flex flex-col gap-4">
           <div className="flex gap-2 justify-center items-center">
             <input name="termsAgreed" type="checkbox" className="rounded text-black cursor-pointer" />
-            <p>I agree to the terms and conditions</p>
+            <p>
+              I agree to the{" "}
+              <a className="underline underline-offset-4 text-accent" target="_blank" rel="noreferrer" href="https://bafkreigtoyn7biwrfihgooqaylqpnq5iqmqlyc63knavm2mxsx2k7uhdfq.ipfs.nftstorage.link/">
+                terms and conditions
+              </a>
+            </p>
           </div>
           <button type="submit" className="border-2 border-solid hover:-translate-y-1 px-4 py-3 rounded-full w-full max-w-md mx-auto">
             Mint NFT
