@@ -83,7 +83,7 @@ const team = [
   },
   {
     name: "J5",
-    role: "Chief Engineer & Music Developer",
+    role: "Engineer & Music Developer",
     bio: "Multi-platinum mix and mastering engineer. Former staff at Criteria Studios, founding member of BanditDAO, and former MonkeDAO Board Member.",
     pfp: j5,
     twitter: "j5trades",
@@ -91,7 +91,7 @@ const team = [
   {
     name: "JRussell",
     role: "Artist Relations & Community Manager",
-    bio: "Musician, percussionist, instructor. Crypto and NFTs since 2021.",
+    bio: "DJ, Producer, Engineer, musician, crypto Degenerate.",
     pfp: jrussell,
     twitter: "joseph_russsell ",
   },
