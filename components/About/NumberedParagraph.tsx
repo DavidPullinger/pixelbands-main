@@ -7,7 +7,7 @@ export default function NumberedParagraph(props: {
       <p className="font-bold text-2xl sm:text-3xl opacity-40">
         0{props.number}
       </p>
-      <p className="text-sm sm:text-lg">{props.text}</p>
+      <p>{props.text}</p>
     </div>
   );
 }

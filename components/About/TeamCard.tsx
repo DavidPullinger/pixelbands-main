@@ -9,12 +9,14 @@ import { Twitter } from "@/components/SVGs";
 export default function TeamCard(props: TeamCardParams) {
   return (
     <div className="flex flex-col gap-1 rounded-lg">
-      <Image
-        className="rounded"
-        src={props.pfp}
-        alt="profile picture"
-        layout="responsive"
-      />
+      <div>
+        <Image
+          className="rounded"
+          src={props.pfp}
+          alt="profile picture"
+          layout="responsive"
+        />
+      </div>
       <div className="flex flex-col gap-1">
         <p className="text-[25px] uppercase text-accent">{props.name}</p>
         <div className="flex items-center justify-between">
@@ -26,7 +28,7 @@ export default function TeamCard(props: TeamCardParams) {
             height={18}
           />
         </div>
-        <p className="text-sm pt-2 sm:text-lg">{props.bio}</p>
+        <p className="pt-2">{props.bio}</p>
       </div>
     </div>
   );

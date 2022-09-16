@@ -18,7 +18,8 @@ export default function Document() {
           rel="stylesheet"
         ></link>
       </Head>
-      <body className="bg-primary text-secondary m-10 mb-14 lg:mx-14 overflow-x-hidden">
+      {/* need mb-0 for about page */}
+      <body className="bg-primary text-secondary m-10 mb-0 lg:mx-14 overflow-x-hidden">
         <Main />
         <NextScript />
       </body>

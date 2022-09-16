@@ -1,0 +1,42 @@
+.wallet-adapter-dropdown {
+  width: fit-content !important;
+}
+
+.wallet-adapter-dropdown-list {
+  right: auto !important;
+  padding: 10px 0 !important;
+  width: 100%;
+}
+
+.wallet-adapter-button-trigger {
+  background-color: transparent !important;
+  border: white 2px solid !important;
+  padding: 10px 12px !important;
+  height: fit-content !important;
+  width: fit-content !important;
+  font-weight: 400 !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  margin: 0 !important;
+}
+
+@media (min-width: 640px) {
+  .wallet-adapter-button-trigger {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+  }
+}
+
+.wallet-adapter-button-trigger:hover {
+  color: #c1226c !important;
+  border-color: #c1226c !important;
+}
+
+.wallet-adapter-button-trigger img {
+  content: url("../public/wallet.svg") !important;
+}
+
+/* Gross - converts white wallet icon to accent color */
+.wallet-adapter-button-trigger:hover img {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(98%) saturate(2140%) hue-rotate(312deg) brightness(87%) contrast(94%);
+}
