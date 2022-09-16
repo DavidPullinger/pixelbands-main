@@ -84,7 +84,7 @@ const team = [
   {
     name: "J5",
     role: "Engineer & Music Developer",
-    bio: "Multi-platinum mix and mastering engineer. Former staff at Criteria Studios, founding member of BanditDAO, and former MonkeDAO Board Member.",
+    bio: "Multi-platinum mix and mastering engineer. Former staff at Criteria Studios, founding member of BanditoDAO, and former MonkeDAO Board Member.",
     pfp: j5,
     twitter: "j5trades",
   },
