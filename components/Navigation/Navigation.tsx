@@ -38,7 +38,7 @@ export default function Navigation() {
       >
         <NavigationLink onClick={() => handleMenuToggle(false)} num="00" name="HOME" url="/" />
         <NavigationLink onClick={() => handleMenuToggle(false)} num="01" name="ABOUT" url="/about" />
-        <NavigationLink onClick={() => handleMenuToggle(false)} num="02" name="STUDIO" url="https://studio.pixelbands.io" />
+        <NavigationLink onClick={() => handleMenuToggle(false)} num="02" name="STUDIO" url="https://pixelbands-studio.vercel.app/" />
         <NavigationLink onClick={() => handleMenuToggle(false)} num="03" name="LAUNCHPAD" url="/launchpad" />
         <NavigationLink onClick={() => handleMenuToggle(false)} num="04" name="MARKETPLACE" url="https://pixelbands.holaplex.market/" />
         <div className="md:hidden">
